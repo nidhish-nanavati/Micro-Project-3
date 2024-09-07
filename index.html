@@ -71,7 +71,7 @@
             input.value="";
         });
         equal.addEventListener("click",()=>{
-            input.value = eval(str).toFixed(3);
+            input.value = Math.round((eval(str)*1000))/1000;
             str = input.value;
         });
 
