@@ -34,7 +34,7 @@
                 <button class="op">.</button>
                 <button class="op">0</button>
                 <button class="op">/</button>
-                <button class="op">x</button>                                
+                <button class="op">X</button>                                
             </div>
             <div class="fifth-row">
                 <button class="bottom" id="reset" style="background-color: #647299;">RESET</button>                                
@@ -52,14 +52,14 @@
         let ops = document.getElementsByClassName('op');
         for(var i=0;i<ops.length;i++){
             let val = ops[i].innerText;
-            if(val != "DEL" && val != "x"){
+            if(val != "DEL" && val != "X"){
                 ops[i].addEventListener("click",()=>{
                 input.value += val;
                 str += val;
                 console.log(str);
                 },false)
             }
-            else if(val == "x"){
+            else if(val == "X"){
                 ops[i].addEventListener("click",()=>{
                 input.value += val;
                 str += "*";
